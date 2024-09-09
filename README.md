@@ -1,21 +1,27 @@
 ## API para pagamento de contas
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+Este projeto foi desenvolvido para gerenciar o pagamento de contas, permitindo registrar novas contas e listar todas as contas salvas no banco de dados.
 
-- Java com Spring Boot
-- Flyway
-- Junit5
-- Gradle
-- MySQL 8.0
-- Java8
-- JPA
-- Swagger
+## Tecnologias Utilizadas
 
-#### EndPoints:
+- **Java com Spring Boot**
+- **Flyway**
+- **JUnit 5**
+- **Gradle**
+- **MySQL 8.0**
+- **Java 8**
+- **JPA**
+- **Swagger**
 
-**POST ->** */contas/incluirConta:* Registra uma nova conta para realização do pagamento.
+## Endpoints
 
-**Exemplo de request:**
+### 1. Registrar uma Nova Conta
+
+**POST** `/contas/incluirConta`
+
+Registra uma nova conta para realização do pagamento.
+
+#### Exemplo de Request:
 
 ```json
 {
@@ -26,9 +32,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 }
 ```
 
-**GET ->** */contas/listaContas:* Lista todas as contas salvas do banco.
+### 2. Listar Todas as Contas
 
-**Exemplo de Response:**
+**GET** `/contas/listaContas`
+
+Lista todas as contas salvas no banco de dados.
+
+#### Exemplo de Response:
 
 ```json
 [
